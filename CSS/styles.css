@@ -44,6 +44,11 @@ footer {
     align-items: center;
 }
 
+.footer-img {
+    height: 48px;
+    width: 48px;
+}
+
 .footer-text {
     width: 100%;
     text-align: center;
