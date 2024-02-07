@@ -18,12 +18,12 @@ img {
     vertical-align: middle;
 }
 
-.main {
+.container {
     background-color: white;
     overflow: hidden;
 }
 
-.main-page-content {
+.container-main-content {
     padding: 10px;
     margin-left: 270px;
     background-color: white;
