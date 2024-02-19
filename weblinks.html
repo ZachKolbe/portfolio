@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Weblinks</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
 </head>
 <body>
 <header>
@@ -22,11 +30,27 @@
 
 <div class="container">
     <div class="sidebar">
-        My sidebar
+        <div id="datepicker"></div>
+        <iframe src="rss-feed.html" width="260px" height="400px"></iframe>
     </div>
 
     <div class="container-main-content">
-        Weblinks section
+    <h1>My Weblinks</h1>
+        <br>
+       <h2><a href="https://github.com/" target="_blank">Github</a></h2>
+        <p>A platform for hosting and collaborating on code repositories.
+            This is very well known and heavily used.</p>
+
+        <br>
+        <h2><a href="https://www.youtube.com/" target="_blank">YouTube</a></h2>
+        <p>A video-sharing platform where users can upload, view, rate, share, and comment on videos.
+            You can also view other media artifacts.</p>
+
+        <br>
+        <h2><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></h2>
+        <p>A professional networking platform where users can connect with colleagues, employers, and industry professionals.
+            It's commonly used for job searching, recruitment, and professional development.</p>
+
     </div>
 </div>
 
@@ -36,6 +60,7 @@
         <div class="footer-text">
             <a href="https://www.linkedin.com/in/zachary-kolbe/" target="_blank"><img src="images/LinkedIn.png" class="footer-img" alt="My LinkedIn Portfolio"></a>
             <a href="https://zachkolbe.myportfolio.com/" target="_blank"><img src="images/adobe-portfolio-48.png" class="footer-img" alt="My adobe-portfolio"></a>
+            <span>&copy; Zach Kolbe</span>
         </div>
     </div>
 </footer>

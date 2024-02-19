@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Album</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
 </head>
 <body>
 <header>
@@ -22,11 +30,18 @@
 
 <div class="container">
     <div class="sidebar">
-        My sidebar
+        <div id="datepicker"></div>
+        <iframe src="rss-feed.html" width="260px" height="400px"></iframe>
     </div>
 
     <div class="container-main-content">
-        Album content section
+
+        <h1>My Album</h1>
+
+        <object data="images/Tiger%20Masters%20Edit.jpg" height="500px" width="400px"></object>
+        <object data="images/Son%20Edit.jpg" height="500px" width="400px"></object>
+        <object data="images/JaredGoff.jpg" height="500px" width="400px"></object>
+
     </div>
 </div>
 
@@ -36,6 +51,7 @@
         <div class="footer-text">
             <a href="https://www.linkedin.com/in/zachary-kolbe/" target="_blank"><img src="images/LinkedIn.png" class="footer-img" alt="My LinkedIn Portfolio"></a>
             <a href="https://zachkolbe.myportfolio.com/" target="_blank"><img src="images/adobe-portfolio-48.png" class="footer-img" alt="My adobe-portfolio"></a>
+            <span>&copy; Zach Kolbe</span>
         </div>
     </div>
 </footer>

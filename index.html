@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <title>Zach's Portfolio Site</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
+
 </head>
 <body>
 
@@ -25,12 +35,45 @@
 <!-- Main Content -->
 <div class="container">
     <div class="sidebar">
-       My sidebar
+        <div id="datepicker"></div>
+        <iframe src="rss-feed.html" width="260px" height="400px"></iframe>
     </div>
 
     <div class="container-main-content">
-         Main page content section
+
+        <object data="images/Zach_profheadshot.jpg" width="28%" height="300px"></object>
+
+         <h1>
+             About Me
+         </h1>
+        <p>
+            Zachary is a student at Penn State pursuing a Bachelor of Science in Human-Centered Design and Development.
+        </p>
+        <br>
+        <h2>
+            Team Member | Foundations of Human-Centered Design and Development
+        </h2>
+        <p>
+            In my role as a team member, I actively contributed to the creation of impactful solutions.
+            We developed a low-fidelity prototype application designed to showcase real-time wait times at on-campus eateries. Additionally,
+            I played a key role in the collaborative development of an application focused on supporting users dealing with mental health challenges.
+            Leveraging Figma, I crafted intuitive wireframes to enhance the UI/UX design.
+        </p>
+        <br>
+        <h2>
+            Golf Pro Shop Assistant
+        </h2>
+
+        <p>
+            As a Golf Pro Shop Assistant, I excelled in performing diverse responsibilities that ensured the smooth operation of the shop.
+            From handling opening and closing duties, maintaining store cleanliness, and setting up displays to restocking shelves,
+            I demonstrated a commitment to excellence. Working closely with the Golf Pro Shop Manager, I efficiently completed assigned tasks and
+            maintained meticulous records of merchandise sales using the POS system. I took pride in assisting golfers with club selection,
+            fitting clubs to their specifications, and offering valuable recommendations for accessories.
+        </p>
+
     </div>
+
 </div>
 
 <!-- Footer -->
@@ -38,9 +81,9 @@
     <div class="footer-text">
         <a href="https://www.linkedin.com/in/zachary-kolbe/" target="_blank"><img src="images/LinkedIn.png" class="footer-img" alt="My LinkedIn Portfolio"></a>
         <a href="https://zachkolbe.myportfolio.com/" target="_blank"><img src="images/adobe-portfolio-48.png" class="footer-img" alt="My adobe-portfolio"></a>
+        <span>&copy; Zach Kolbe</span>   
     </div>
 </footer>
-
 
 </body>
 </html>

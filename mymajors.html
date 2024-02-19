@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>My Majors</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
 </head>
 <body>
 <header>
@@ -22,11 +30,22 @@
 
 <div class="container">
     <div class="sidebar">
-        My sidebar
+        <div id="datepicker"></div>
+        <iframe src="rss-feed.html" width="260px" height="400px"></iframe>
     </div>
 
     <div class="container-main-content">
-        Major content section
+        <object data="images/penn%20state%20logo.png" width="300px" height="200px"></object>
+
+        <h2>Major</h2>
+        <p>Right now I am pursuing a Bachelor of Science in Human-Centered Design and Development. This is a program located
+        within the Penn State College of IST. This is a 4-year degree program with an empahsis on design and human interaction. In addition,
+        to those skills I also am getting lots of experiance coding with various languages.</p>
+        <br>
+
+        <h2>Career Path</h2>
+        <p>With this degree I feel as if I will be pretty versatile with what kinds of jobs I can obtain. My goal is to get some exposure working
+        for some type of software company exploring some coding aspects as well as some design.</p>
     </div>
 </div>
 
@@ -36,6 +55,7 @@
         <div class="footer-text">
             <a href="https://www.linkedin.com/in/zachary-kolbe/" target="_blank"><img src="images/LinkedIn.png" class="footer-img" alt="My LinkedIn Portfolio"></a>
             <a href="https://zachkolbe.myportfolio.com/" target="_blank"><img src="images/adobe-portfolio-48.png" class="footer-img" alt="My adobe-portfolio"></a>
+            <span>&copy; Zach Kolbe</span>
         </div>
     </div>
 </footer>

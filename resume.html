@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>My Resume</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
 </head>
 <body>
 <header>
@@ -22,11 +30,71 @@
 
 <div class="container">
     <div class="sidebar">
-        My sidebar
+        <div id="datepicker"></div>
+        <iframe src="rss-feed.html" width="260px" height="400px"></iframe>
     </div>
 
     <div class="container-main-content">
-        Resume content section
+
+        <!--<p>Below is a copy of my Resume. Within my resume you will find information regarding my education, work, and technical experiance.</p>
+        <object data="images/ZachKolbe-MH-Resume.pdf" width="80%" height="600px"></object>-->
+        <div class="container-resume">
+        <div class="contact-info">
+            <h1>Zachary Kolbe</h1>
+            <p>(814) 577-5764 | zpk5084@psu.edu | Philipsburg, PA 16866</p>
+        </div>
+        <div class="objective">
+            <h2>Objective</h2>
+            <p>As a dedicated student pursuing a degree in Human-Centered Design and Development, I am eager to obtain an internship that leverages my passion for user-centric solutions, creativity, and problem-solving skills.</p>
+        </div>
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>The Pennsylvania State University</strong>, University Park, PA<br>
+                Bachelor of Science, Human-Centered Design and Development<br>
+                Expected graduation May 2026<br>
+                GPA: 3.43 / Dean’s List: Fall 2023</p>
+            <h3>Relevant Courses</h3>
+            <ul>
+                <li>Foundations of Human-Centered Design and Development</li>
+                <li>Application Development Design Studio I</li>
+                <li>Design Practice in Human-Centered Design and Development</li>
+                <li>Organization of Data</li>
+                <li>Introduction to Application Development</li>
+                <li>Intermediate & Object-Oriented Programming</li>
+                <li>Programming for The Web</li>
+                <li>Networking and Telecommunications</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <p><strong>Software:</strong> Visual Studio Code, IntelliJ, Eclipse, WebStorm, Figma, PyCharm, MySQL, GitHub, Adobe Photoshop, Adobe Lightroom, Wireshark, Minitab</p>
+            <p><strong>Languages:</strong> Java, Python, SQL, HTML, CSS</p>
+        </div>
+        <div class="section">
+            <h2>Project Work Experience</h2>
+            <ul>
+                <li>Team Member, Foundations of Human-Centered Design and Development
+                    <ul>
+                        <li>Worked in a team to develop a low-fidelity prototype application to display wait times at on-campus eateries.</li>
+                        <li>Worked in a team to develop a working application aimed at helping users struggling with mental health.</li>
+                        <li>Utilized Adobe to create wireframes for the UI/UX design.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Experience</h2>
+            <p><strong>GOLF PRO SHOP ASSISTANT</strong><br>
+                Philipsburg, PA<br>
+                Philipsburg Elks Lodge & Country Club<br>
+                April 2021 - Present</p>
+            <ul>
+                <li>Performed opening and closing duties such as cleaning the store, setting up displays, and restocking shelves.</li>
+                <li>Provided support to the Golf Pro Shop Manager by completing assigned tasks in a timely manner.</li>
+                <li>Assisted golfers with club selection, fitted clubs to golfer's specifications, and provided recommendations for accessories.</li>
+            </ul>
+        </div>
+        </div>
     </div>
 </div>
 
@@ -36,6 +104,7 @@
         <div class="footer-text">
             <a href="https://www.linkedin.com/in/zachary-kolbe/" target="_blank"><img src="images/LinkedIn.png" class="footer-img" alt="My LinkedIn Portfolio"></a>
             <a href="https://zachkolbe.myportfolio.com/" target="_blank"><img src="images/adobe-portfolio-48.png" class="footer-img" alt="My adobe-portfolio"></a>
+            <span>&copy; Zach Kolbe</span>
         </div>
     </div>
 </footer>

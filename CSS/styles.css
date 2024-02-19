@@ -78,3 +78,46 @@ nav li a {
     padding: 0.5em 1em;
     text-decoration: none;
 }
+
+.ui-datepicker {
+    width: 240px !important;
+}
+
+.ui-widget-header
+{
+    border: 1px solid #314D64 !important;
+    background: #314D64 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x !important;
+}
+
+.container-resume {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+h1, h2 {
+    color: #333;
+}
+h2 {
+    margin-top: 20px;
+}
+h3 {
+    margin-bottom: 5px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.contact-info {
+    margin-bottom: 20px;
+}
+.objective {
+    margin-bottom: 20px;
+}
+.section {
+    margin-bottom: 20px;
+}
+.section-header {
+    font-weight: bold;
+}

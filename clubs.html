@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Clubs</title>
      <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+  <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+  </script>
 </head>
 <body>
 <header>
@@ -22,11 +30,17 @@
 
 <div class="container">
   <div class="sidebar">
-    My sidebar
+    <div id="datepicker"></div>
+    <iframe src="rss-feed.html" width="260px" height="400px"></iframe>
   </div>
 
   <div class="container-main-content">
-    Clubs page content section
+    <h1>My Clubs</h1>
+    <object data="images/Onward-State-Lion-2.png" height="400px" width="400px"></object>
+    <h2>Onward State</h2>
+    <p>During my time at Penn State my Freshman year I worked a little bit
+    with Onward State. I made some graphics for them to post across their social media platforms. As of now I am no longer involved
+    with any clubs.</p>
   </div>
 </div>
 
@@ -36,6 +50,7 @@
     <div class="footer-text">
       <a href="https://www.linkedin.com/in/zachary-kolbe/" target="_blank"><img src="images/LinkedIn.png" class="footer-img" alt="My LinkedIn Portfolio"></a>
       <a href="https://zachkolbe.myportfolio.com/" target="_blank"><img src="images/adobe-portfolio-48.png" class="footer-img" alt="My adobe-portfolio"></a>
+      <span>&copy; Zach Kolbe</span>
     </div>
   </div>
 </footer>
