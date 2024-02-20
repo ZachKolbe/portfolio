@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Weblinks</title>
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="resources/CSS/styles.css">
     <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
 <header>
-    <img src="images/zk%20logo.png" alt="Zach Logo">
+    <img src="resources/images/zk%20logo.png" alt="Zach Logo">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -24,12 +24,35 @@
             <li><a href="clubs.html">Clubs</a></li>
             <li><a href="album.html">Album</a></li>
             <li><a href="weblinks.html">Weblinks</a></li>
+            <li><a href="golfcourses.html">Golf Courses</a></li>
         </ul>
     </nav>
 </header>
 
 <div class="container">
     <div class="sidebar">
+        <form
+                action="https://formspree.io/f/mzbnrqyr"
+                method="POST"
+        >
+            <h1>Contact Form</h1>
+
+            <label>
+                Your email:
+                <br>
+                <input type="email" name="email" style="width: 260px">
+                <br>
+            </label>
+            <label>
+                Your message:
+                <br>
+                <textarea name="message" style="width: 260px; height: 150px"></textarea>
+                <br>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit" style="width: 100px; height: 25px; background-color: #0D6EFD; color: white ">Submit</button>
+        </form>
+        <br>
         <div id="datepicker"></div>
         <iframe src="rss-feed.html" width="260px" height="400px"></iframe>
     </div>
@@ -58,8 +81,8 @@
 <footer>
     <div class="footer-text">
         <div class="footer-text">
-            <a href="https://www.linkedin.com/in/zachary-kolbe/" target="_blank"><img src="images/LinkedIn.png" class="footer-img" alt="My LinkedIn Portfolio"></a>
-            <a href="https://zachkolbe.myportfolio.com/" target="_blank"><img src="images/adobe-portfolio-48.png" class="footer-img" alt="My adobe-portfolio"></a>
+            <a href="https://www.linkedin.com/in/zachary-kolbe/" target="_blank"><img src="resources/images/LinkedIn.png" class="footer-img" alt="My LinkedIn Portfolio"></a>
+            <a href="https://zachkolbe.myportfolio.com/" target="_blank"><img src="resources/images/adobe-portfolio-48.png" class="footer-img" alt="My adobe-portfolio"></a>
             <span>&copy; Zach Kolbe</span>
         </div>
     </div>

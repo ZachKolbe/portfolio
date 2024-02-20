@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Majors</title>
+    <title>Weblinks</title>
     <link rel="stylesheet" type="text/css" href="resources/CSS/styles.css">
     <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -58,17 +58,44 @@
     </div>
 
     <div class="container-main-content">
-        <h1>My Major</h1>
+        <h1>Golf Courses Near Penn State</h1>
+        <div id="data"></div>
 
-        <h2>Major</h2>
-        <p>I am pursuing a Bachelor of Science in Human-Centered Design and Development. This is a program located
-        within the Penn State College of IST. This is a 4-year degree program with an empahsis on design and human interaction. In addition,
-        to those skills I also am getting experience coding with various languages.</p>
-        <br>
+        <script>
+            // Fetch JSON data from a URL
+            fetch('/api/data.json')
+                .then(response => response.json()) // Parse JSON response
+                .then(data => {
+                    // Handle the JSON data
+                    console.log(data); // Log the data to the console
+                    // Display the data on the page
+                    const dataDiv = document.getElementById('data');
 
-        <h2>Career Path</h2>
-        <p>Having this degree makes me confident that I'll have a wide range of job options.
-            My aim is to gain exposure by working for a software company, where I can delve into both coding and design aspects.</p>
+                    // Iterate over the array of golf courses
+                    data.golf_courses_near_psu.forEach(course => {
+                        // Create a div for each golf course
+                        const courseDiv = document.createElement('div');
+                        courseDiv.classList.add('course');
+
+                        // Populate the div with the golf course information
+                        courseDiv.innerHTML = `
+<h2>${course.name}</h2>
+<p><strong>Location:</strong> ${course.location}</p>
+<p><strong>Phone:</strong> ${course.phone}</p>
+<p><strong>Website:</strong> <a href="${course.website}" target="_blank">${course.website}</a></p>
+<p><strong>Holes:</strong> ${course.holes}</p>
+          `;
+
+                        // Append the course div to the main data div
+                        dataDiv.appendChild(courseDiv);
+                    });
+                })
+                .catch(error => {
+                    // Handle errors
+                    console.error('Error fetching data:', error);
+                });
+        </script>
+
     </div>
 </div>
 

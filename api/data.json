@@ -1,0 +1,39 @@
+{
+  "golf_courses_near_psu": [
+    {
+      "name": "Toftrees Golf Resort",
+      "location": "1 Country Club Ln, State College, PA 16803",
+      "phone": "(814) 234-8000",
+      "website": "https://www.toftrees.com/",
+      "holes": 18
+    },
+    {
+      "name": "Penn State Golf Courses",
+      "location": "1523 W College Ave, State College, PA 16801",
+      "phone": "(814) 865-4653",
+      "website": "https://www.pennstategolfcourses.com/",
+      "holes": 36
+    },
+    {
+      "name": "Mountain View Country Club",
+      "location": "100 Elks Club Rd, Boalsburg, PA 16827",
+      "phone": "(814) 466-7231",
+      "website": "https://mtviewcountryclub.com/",
+      "holes": 18
+    },
+    {
+      "name": "Skytop Mountain Golf Club",
+      "location": "350 Freestone Drive, Port Matilda, PA 16870",
+      "phone": "(814) 692-4249",
+      "website": "http://skytopgolf.com/",
+      "holes": 18
+    },
+    {
+      "name": "Philipsburg Elks Lodge and Country Club",
+      "location": "1 Country Club Lane, Philipsburg, PA 16866",
+      "phone": "(814) 342-0379",
+      "website": "https://philipsburgelks.org/",
+      "holes": 9
+    }
+  ]
+}
